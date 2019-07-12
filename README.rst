@@ -16,7 +16,7 @@
 .. image:: 	https://img.shields.io/travis/TabViewer/tabview.svg
     :target: https://travis-ci.org/TabViewer/tabview
 
-Tabview  
+Tabview
 =========
 
 View a CSV file in a spreadsheet-like display.
@@ -42,7 +42,7 @@ Features:
 * Python 2.7+ and 3.x
 * Spreadsheet-like view for easily visualizing tabular data
 * Vim-like navigation (h,j,k,l, g(top), G(bottom), 12G goto line 12, m - mark,
-  ' - goto mark, etc.) 
+  ' - goto mark, etc.)
 * Toggle persistent header row
 * Sort ascending or descending by any column. Dynamically change column width and gap
 * Sort in 'natural order' to improve numeric sorting
@@ -55,7 +55,7 @@ Features:
   list-of-lists)
 * See the screenshots directory for some pictures.
 
-Requires: 
+Requires:
 ---------
 
 * Python 2.7+ or 3.x
@@ -84,7 +84,7 @@ Usage:
 * From python command line to view an object
 
     .. code:: python
-    
+
         import tabview as t
         a = [["a","b","c"], ["d","e","f"]]
         t.view(a)
@@ -92,7 +92,7 @@ Usage:
 * From python command line to view a file
 
     .. code:: python
-    
+
         import tabview as t
         t.view(<filename>, start_pos=(60,40))
 
@@ -120,7 +120,7 @@ Keybindings:
 **PgUp/PgDn or J/K**         Move a page up or down
 **H,L**                      Page left or right
 **g**                        Goto top of current column
-**[num]G**                   Goto line <num> or bottom of current column 
+**[num]G**                   Goto line <num> or bottom of current column
                              if num not given
 **Ctrl-g**                   Show file/data information
 **Insert or m**              Memorize this position
@@ -141,7 +141,7 @@ Keybindings:
 **@**                        Sort numerically by the current column (descending)
 **r**                        Reload file/data. Also resets sort order
 **y**                        Yank cell contents to the clipboard
-                             (requires xsel or xclip)
+                             (requires xsel or xclip or pbcopy)
 **[num]c**                   Toggle variable column width mode (mode/max),
                              or set width to [num]
 **[num]C**                   Maximize current column, or set width to [num]
